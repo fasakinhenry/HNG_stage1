@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #287bff;
+  --banner-bg-color: #f0f0f0;
+  --nav-bg-color: rgba(255, 255, 255, 0.8);
+  --footer-bg-color: #282828;
+  --footer-text-color: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --banner-bg-color: #333333;
+  --nav-bg-color: rgba(18, 18, 18, 0.8);
+  --footer-bg-color: #000000;
+  --footer-text-color: #ffffff;
+}
+
+.banner {
+  background-color: var(--banner-bg-color);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.theme-toggle {
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+.profile-section,
+.tech-goals-section,
+.cta-section {
+  margin-bottom: 2rem;
+}
+
+.profile-section div {
+  margin-bottom: 1rem;
+}
+
+.profile-section img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.tech-goals-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1a5bb8;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--footer-text-color);
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .cta-section {
+    padding: 1.5rem;
+  }
+
+  .profile-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-section {
+    padding: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .footer-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 1.2rem;
+    }
+
+    nav .theme-toggle {
+        font-size: 1.2rem;
+    }
+
+    .profile-section {
+        padding: 1rem;
+    }
+
+    .profile-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-section p {
+        font-size: 1rem;
+    }
+
+    .profile-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech-goals-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .tech-goals-section p {
+        font-size: 1rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .footer-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+    }
+}
