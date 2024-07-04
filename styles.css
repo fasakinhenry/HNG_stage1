@@ -11,6 +11,9 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 :root {
@@ -32,8 +35,17 @@ body {
   --footer-text-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   line-height: 2.2em;
+  text-align: justify;
+}
+
+main {
+  max-width: 1540px;
 }
 
 i {
@@ -46,6 +58,7 @@ i {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 400;
+  width: 100%;
 }
 
 nav {
@@ -104,6 +117,18 @@ main {
   font-weight: bold;
 }
 
+.slack-email {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+[data-testid='currentTimeUTC'],
+[data-testid='currentDay'] {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
 .links {
   /* background-color: #28ff; */
   padding: 0.5rem 1rem;
@@ -119,7 +144,6 @@ main {
 
 .links a {
   color: var(--text-color);
-  text-decoration: none;
 }
 
 .links:hover a {
@@ -158,6 +182,10 @@ main {
   margin-bottom: 1rem;
 }
 
+.cta-section p {
+  margin-bottom: 2rem;
+}
+
 .cta-button {
   padding: 0.75rem 2rem;
   background-color: var(--text-color);
@@ -167,7 +195,6 @@ main {
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s;
-  margin-top: 2rem;
 }
 
 .cta-button:hover {
@@ -204,6 +231,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  .profile-section {
+    justify-content: space-around;
+  }
   nav {
     padding: 1rem;
   }
