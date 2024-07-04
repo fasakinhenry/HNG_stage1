@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henry's Tech Goals</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font awesome Icons -->
+    <script src="https://kit.fontawesome.com/b246f45830.js" crossorigin="anonymous"></script>
+</head>
   </head>
   <body>
     <div class="banner">This project was developed during HNG11 period.</div>
     <nav>
       <div class="logo">Henry</div>
       <div class="theme-toggle">
-        <i class="icon-sun" id="themeIcon"></i>
+        <i class="fa-solid fa-sun" id="themeIcon"></i>
       </div>
     </nav>
     <main>
       <section class="profile-section">
+        <div data-testid="slackProfilePicture">
+          <img
+            src="./assets/profile2.jpg"
+            alt="Slack Profile Picture"
+            id="profilePicture" height="592px" width="592px"
+          />
+        </div>
         <div data-testid="slackDisplayName">Slack Name: Fasakin Henry</div>
         <div data-testid="slackEmail">Slack Email: fasakinhenry@gmail.com</div>
         <div data-testid="currentTimeUTC">
@@ -23,13 +33,6 @@
         </div>
         <div data-testid="currentDay">
           Current Day: <span id="dayOfWeek"></span>
-        </div>
-        <div data-testid="slackProfilePicture">
-          <img
-            src="[Your Profile Picture URL]"
-            alt="Slack Profile Picture"
-            id="profilePicture"
-          />
         </div>
         <div>
           <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
@@ -71,16 +74,16 @@
       <div class="footer-content">
         <h2>Henry Fasakin</h2>
         <div class="social-links">
-          <a href="[Your LinkedIn URL]" target="_blank"
+          <a href="https://linkedin.com/fasakin-henry" target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="[Your GitHub URL]" target="_blank"
+          <a href="https://github.com/fasakinhenry" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
-          <a href="[Your Twitter URL]" target="_blank"
+          <a href="https://x.com/henqsoft" target="_blank"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a href="[Your Portfolio URL]" target="_blank"
+          <a href="https://fasakinhenry.xyz" target="_blank"
             ><i class="fas fa-globe"></i
           ></a>
         </div>

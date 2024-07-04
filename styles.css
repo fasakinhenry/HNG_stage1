@@ -76,8 +76,6 @@ main {
 }
 
 .profile-section img {
-  width: auto;
-  height: auto;
   max-width: 100%;
 }
 
@@ -144,11 +142,6 @@ footer {
   .cta-section {
     padding: 1.5rem;
   }
-
-  .profile-section img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {
@@ -193,11 +186,6 @@ footer {
 
     .profile-section p {
         font-size: 1rem;
-    }
-
-    .profile-section img {
-        width: 100%;
-        height: auto;
     }
 
     .tech-goals-section h1 {
