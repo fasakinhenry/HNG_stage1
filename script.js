@@ -1,14 +1,21 @@
 // Dark mode toggle functionality
 const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('#themeIcon');
 const body = document.body;
 
 themeToggle.addEventListener('click', () => {
   if (body.getAttribute('data-theme') === 'dark') {
     body.removeAttribute('data-theme');
     localStorage.removeItem('theme');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-moon');
   } else {
     body.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
   }
 });
 

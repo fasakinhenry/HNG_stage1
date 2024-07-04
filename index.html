@@ -22,7 +22,7 @@
     <main>
       <section class="profile-section">
         <div class="left">
-          <div data-testid="slackProfilePicture">
+          <div data-testid="slackProfilePicture" class="img-container">
             <img
               src="./assets/profile2.jpg"
               alt="Slack Profile Picture"
@@ -33,8 +33,10 @@
           </div>
         </div>
         <div class="right">
-          <div data-testid="slackDisplayName">Slack Name: Fasakin Henry</div>
-          <div data-testid="slackEmail">
+          <div data-testid="slackDisplayName" class="slack slack-name">
+            Slack Name: Fasakin Henry
+          </div>
+          <div data-testid="slackEmail" class="slack slack-email">
             Slack Email: fasakinhenry@gmail.com
           </div>
           <div data-testid="currentTimeUTC">
@@ -43,15 +45,15 @@
           <div data-testid="currentDay">
             Current Day: <span id="dayOfWeek"></span>
           </div>
-          <div>
+          <div class="links">
             <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
           </div>
-          <div>
+          <div class="links">
             <a href="https://keyword.dog" data-testid="keywordLink"
               >Keyword Dog</a
             >
           </div>
-          <div>
+          <div class="links">
             <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
               >Scrape Any Web</a
             >
