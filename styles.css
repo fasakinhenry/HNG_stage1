@@ -36,7 +36,8 @@ body {
   background-color: var(--banner-bg-color);
   padding: 1rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 nav {
@@ -50,6 +51,7 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
+  border-bottom: 2px solid rgb(206, 202, 202);
 }
 
 .logo {
@@ -65,6 +67,19 @@ main {
   padding: 2rem;
 }
 
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .profile-section,
 .tech-goals-section,
 .cta-section {
@@ -76,6 +91,8 @@ main {
 }
 
 .profile-section img {
+  width: auto;
+  height: auto;
   max-width: 100%;
 }
 
@@ -142,14 +159,14 @@ footer {
   .cta-section {
     padding: 1.5rem;
   }
+
+  .profile-section img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .cta-section {
     padding: 1rem;
   }
@@ -168,48 +185,53 @@ footer {
 }
 
 @media (max-width: 480px) {
-    nav .logo {
-        font-size: 1.2rem;
-    }
+  nav .logo {
+    font-size: 1.2rem;
+  }
 
-    nav .theme-toggle {
-        font-size: 1.2rem;
-    }
+  nav .theme-toggle {
+    font-size: 1.2rem;
+  }
 
-    .profile-section {
-        padding: 1rem;
-    }
+  .profile-section {
+    padding: 1rem;
+  }
 
-    .profile-section h1 {
-        font-size: 1.5rem;
-    }
+  .profile-section h1 {
+    font-size: 1.5rem;
+  }
 
-    .profile-section p {
-        font-size: 1rem;
-    }
+  .profile-section p {
+    font-size: 1rem;
+  }
 
-    .tech-goals-section h1 {
-        font-size: 1.5rem;
-    }
+  .profile-section img {
+    width: 100%;
+    height: auto;
+  }
 
-    .tech-goals-section p {
-        font-size: 1rem;
-    }
+  .tech-goals-section h1 {
+    font-size: 1.5rem;
+  }
 
-    .cta-section h2 {
-        font-size: 1.2rem;
-    }
+  .tech-goals-section p {
+    font-size: 1rem;
+  }
 
-    .cta-button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
+  .cta-section h2 {
+    font-size: 1.2rem;
+  }
 
-    .footer-content h2 {
-        font-size: 1.2rem;
-    }
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
 
-    .social-links a {
-        font-size: 1rem;
-    }
+  .footer-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
 }
