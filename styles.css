@@ -209,6 +209,7 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   border-top: 1px dashed grey;
+  width: 100%;
 }
 
 .footer-content h2 {
