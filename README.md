@@ -58,3 +58,5 @@ Submission Mode: Submit your tasks through the designated submission form. Ensur
 - Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.
 
 Submission Deadline: The deadline for submissions is Wednesday 3rd July at < 11:59pm GMT>. Late submissions will not be entertained.
+
+> Made with 💖 by [Fasakin Henry](https://github.com/fasakinhenry)
